@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/all_nav_in_app"
+    app:startDestination="@id/enterFragment">
+
+    <fragment
+        android:id="@+id/enterFragment"
+        android:name="com.quizapp.quizfoirtopics.EnterFragment"
+        android:label="fragment_enter"
+        tools:layout="@layout/fragment_enter" >
+        <action
+            android:id="@+id/action_enterFragment_to_mathematicsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/mathematicsFragment" />
+        <action
+            android:id="@+id/action_enterFragment_to_sportsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/sportsFragment" />
+        <action
+            android:id="@+id/action_enterFragment_to_someSettingsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/someSettingsFragment" />
+        <action
+            android:id="@+id/action_enterFragment_to_musicFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/musicFragment" />
+        <action
+            android:id="@+id/action_enterFragment_to_geographyFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/geographyFragment" />
+        <action
+            android:id="@+id/action_enterFragment_to_aboutAppInfoFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/aboutAppInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/geographyFragment"
+        android:name="com.quizapp.quizfoirtopics.GeographyFragment"
+        android:label="fragment_geography"
+        tools:layout="@layout/fragment_geography" >
+        <action
+            android:id="@+id/action_geographyFragment_to_correctAnsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/correctAnsFragment" />
+        <action
+            android:id="@+id/action_geographyFragment_to_vrongAnsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/vrongAnsFragment" />
+        <action
+            android:id="@+id/action_geographyFragment_to_aboutAppInfoFragment3"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/aboutAppInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.quizapp.quizfoirtopics.MusicFragment"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_musicFragment_to_correctAnsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/correctAnsFragment" />
+        <action
+            android:id="@+id/action_musicFragment_to_vrongAnsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/vrongAnsFragment" />
+        <action
+            android:id="@+id/action_musicFragment_to_aboutAppInfoFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/aboutAppInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mathematicsFragment"
+        android:name="com.quizapp.quizfoirtopics.MathematicsFragment"
+        android:label="fragment_mathematics"
+        tools:layout="@layout/fragment_mathematics" >
+        <action
+            android:id="@+id/action_mathematicsFragment_to_correctAnsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/correctAnsFragment" />
+        <action
+            android:id="@+id/action_mathematicsFragment_to_vrongAnsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/vrongAnsFragment" />
+        <action
+            android:id="@+id/action_mathematicsFragment_to_aboutAppInfoFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/aboutAppInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportsFragment"
+        android:name="com.quizapp.quizfoirtopics.SportsFragment"
+        android:label="fragment_sports"
+        tools:layout="@layout/fragment_sports" >
+        <action
+            android:id="@+id/action_sportsFragment_to_correctAnsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/correctAnsFragment" />
+        <action
+            android:id="@+id/action_sportsFragment_to_vrongAnsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/vrongAnsFragment" />
+        <action
+            android:id="@+id/action_sportsFragment_to_aboutAppInfoFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/aboutAppInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutAppInfoFragment"
+        android:name="com.quizapp.quizfoirtopics.AboutAppInfoFragment"
+        android:label="fragment_about_app_info"
+        tools:layout="@layout/fragment_about_app_info" />
+    <fragment
+        android:id="@+id/someSettingsFragment"
+        android:name="com.quizapp.quizfoirtopics.SomeSettingsFragment"
+        android:label="fragment_some_settings"
+        tools:layout="@layout/fragment_some_settings" />
+    <fragment
+        android:id="@+id/correctAnsFragment"
+        android:name="com.quizapp.quizfoirtopics.CorrectAnsFragment"
+        android:label="fragment_correct_ans"
+        tools:layout="@layout/fragment_correct_ans" >
+        <action
+            android:id="@+id/action_correctAnsFragment_to_geographyFragment"
+            app:destination="@id/geographyFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_correctAnsFragment_to_mathematicsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpToInclusive="true"
+            app:destination="@id/mathematicsFragment" />
+        <action
+            android:id="@+id/action_correctAnsFragment_to_sportsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpToInclusive="true"
+            app:destination="@id/sportsFragment" />
+        <action
+            android:id="@+id/action_correctAnsFragment_to_musicFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpToInclusive="true"
+            app:destination="@id/musicFragment" />
+        <argument
+            android:name="type_quiz"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_correctAnsFragment_to_enterFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/enterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vrongAnsFragment"
+        android:name="com.quizapp.quizfoirtopics.VrongAnsFragment"
+        android:label="fragment_vrong_ans"
+        tools:layout="@layout/fragment_vrong_ans" >
+        <action
+            android:id="@+id/action_vrongAnsFragment_to_musicFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpToInclusive="true"
+            app:destination="@id/musicFragment" />
+        <action
+            android:id="@+id/action_vrongAnsFragment_to_sportsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpToInclusive="true"
+            app:destination="@id/sportsFragment" />
+        <action
+            android:id="@+id/action_vrongAnsFragment_to_mathematicsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpToInclusive="true"
+            app:destination="@id/mathematicsFragment" />
+        <action
+            android:id="@+id/action_vrongAnsFragment_to_geographyFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpToInclusive="true"
+            app:destination="@id/geographyFragment" />
+        <argument
+            android:name="type_quizz"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_vrongAnsFragment_to_enterFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/enterFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bkg_custom_grad_lin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor_35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_hor_95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vert_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vert_95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vert_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <ImageView
+        android:id="@+id/img_geography_quiz"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/globe"
+        app:layout_constraintDimensionRatio="1,1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_50"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_05"
+        app:layout_constraintTop_toTopOf="@id/guideline_hor_15" />
+
+    <TextView
+        android:id="@+id/tv_geography_quiz"
+        android:layout_width="wrap_content"
+        android:alpha="0.9"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/add_colour_the_most_dark"
+        android:textAllCaps="true"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_black"
+        android:text="geography"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_50"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_05"
+        app:layout_constraintTop_toBottomOf="@id/img_geography_quiz" />
+
+    <ImageView
+        android:id="@+id/img_mathematics_quizz"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/math_1"
+        app:layout_constraintDimensionRatio="1,1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_95"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_50"
+        app:layout_constraintTop_toTopOf="@id/guideline_hor_15" />
+
+    <TextView
+        android:id="@+id/tv_mathematics_quizz"
+        android:alpha="0.9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/add_colour_the_most_dark"
+        android:textAllCaps="true"
+        android:fontFamily="@font/montserrat_black"
+        android:text="mathematics"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_95"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_50"
+        app:layout_constraintTop_toBottomOf="@id/img_geography_quiz" />
+
+
+    <ImageView
+        android:id="@+id/img_music_quiz"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/music"
+        app:layout_constraintDimensionRatio="1,1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_95"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_50"
+        app:layout_constraintTop_toTopOf="@id/guideline_hor_60" />
+
+    <TextView
+        android:id="@+id/tv_music_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.9"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:fontFamily="@font/montserrat_black"
+        android:text="music"
+        android:textColor="@color/add_colour_the_most_dark"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_95"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_50"
+        app:layout_constraintTop_toBottomOf="@id/img_music_quiz" />
+
+    <ImageView
+        android:id="@+id/img_sport_quiz"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/sportt"
+        app:layout_constraintDimensionRatio="1,1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_50"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_05"
+        app:layout_constraintTop_toTopOf="@id/guideline_hor_60" />
+
+    <TextView
+        android:id="@+id/tv_sport_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:alpha="0.9"
+        android:textAllCaps="true"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_black"
+        android:text="sport"
+        android:textColor="@color/add_colour_the_most_dark"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_50"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_05"
+        app:layout_constraintTop_toBottomOf="@id/img_sport_quiz"/>
+
+
+    <ImageView
+        android:id="@+id/btn_add_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="1dp"
+        android:src="@drawable/info"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_hor_10"
+        app:layout_constraintDimensionRatio="1,1"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_05"
+        app:layout_constraintTop_toTopOf="@id/guideline_hor_05" />
+
+    <ImageView
+        android:id="@+id/btn_img_settings_some"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/settings"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_hor_10"
+        app:layout_constraintDimensionRatio="1,1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vert_95"
+        app:layout_constraintTop_toTopOf="@id/guideline_hor_05" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_choose_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/montserrat_black"
+        android:gravity="center"
+        android:padding="3dp"
+        android:alpha="0.7"
+        android:text="choose quiz topic"
+        android:textAllCaps="true"
+        android:textColor="@color/add_colour_the_most_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vert_95"
+        app:layout_constraintStart_toStartOf="@id/guideline_vert_05"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_dovn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="true"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/dovn_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_hor_95" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
